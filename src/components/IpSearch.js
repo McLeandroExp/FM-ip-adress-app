@@ -7,11 +7,11 @@ export const IpSearch = ({setIpData}) => {
   const handleInputChange = ({ target }) => setInputValue(target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue.trim().length >= 15) {
+    // if (inputValue.trim().length >= 2) {
       getLocationByIp(inputValue)
         .then(data => setIpData(data));
       setInputValue('')  
-    }
+    // }
   };
   return (
     <form className="ipform" onSubmit={handleSubmit}>
@@ -20,6 +20,7 @@ export const IpSearch = ({setIpData}) => {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
+        placeholder="Search for Any IP address or domain"
       />
       <button className="ipform__button"></button>
     </form>

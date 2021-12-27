@@ -4,7 +4,6 @@ import 'leaflet/dist/leaflet.css'
 import {icon,latLng} from 'leaflet' 
 export const LMap = ({coors}) => {
   const crs = latLng(...coors)
-  // map.setView(crs,13)
   const MyIcon = icon({
     iconUrl: './assets/images/icon-location.svg',
     iconSize: [32,32],
@@ -15,7 +14,6 @@ export const LMap = ({coors}) => {
     map.setView(crs,13)
     return null
   }
-  console.log(`mapa generado`)
   return (
       <MapContainer center={coors} zoom={13} scrollWheelZoom={false}>
         <TileLayer
@@ -25,7 +23,7 @@ export const LMap = ({coors}) => {
         <CambiarCentro/>
         <Marker position={coors} icon={MyIcon}>
           <Popup>
-            Not exact position
+            {`${coors[0]} ${coors[1]}` }
           </Popup>
         </Marker>
         

@@ -1,11 +1,13 @@
 import axios from "axios";
-export const getLocationByIp = async (ip = "") => {
+export const getLocationByIp = async (input = "") => {
   try {
     const instance = axios.create({
       baseURL: "https://geo.ipify.org/api/v2/country,city",
       params: {
         apiKey: process.env.REACT_APP_LOCALIZATION_KEY,
-        ipAddress: ip,
+        ipAddress: input,
+        domain: input,
+        email: input
       },
     });
     const response = await instance.get();

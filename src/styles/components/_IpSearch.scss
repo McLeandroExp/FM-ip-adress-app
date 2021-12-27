@@ -1,33 +1,42 @@
-.ipform{
-    margin-top: 25px;
-    width: 80%;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    border-radius: 15px;
-    border-color: white;
-    outline-style: none;
+.ipform {
+  margin-top: 25px;
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: 15px;
+  border-color: white;
+  outline-style: none;
 }
-.ipform__input{
-    display: block;
-    width: 80%;
-    padding: 15px;
-    padding-left: 20px;
-    border-radius: 15px 0 0 15px;
-    border-color: white;
-    outline-style: none;
+.ipform__input {
+  display: block;
+  width: 80%;
+  padding: 15px;
+  padding-left: 20px;
+  border-radius: 15px 0 0 15px;
+  border-color: white;
+  outline-style: none;
+}
+.ipform__button {
+  display: block;
+  width: 20%;
+  background-color: $VeryDarkGray;
+  background-image: url("../../images/icon-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+.ipform__button:hover {
+  background-color: #444;
 
 }
-.ipform__button{
-    display: block;
-    width: 20%;
-    background-color: $VeryDarkGray;
-    background-image: url('../../images/icon-arrow.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 0 15px 15px 0;
+@media screen and (min-width: 1024px) {
+  .ipform {
+    width: 50%;
+  }
 }
