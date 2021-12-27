@@ -1,23 +1,30 @@
 import React from 'react'
 
-export const AdressInfo = () => {
+export const AdressInfo = ({ipData}) => {
+    let ipAddress="",location="",timezone="",isp="";
+    if(ipData){
+        ipAddress = ipData.ip
+        location = ipData.location
+        timezone = ipData.timezone
+        isp = ipData.isp
+    }    
     return (
         <article className='address'>
             <div className="address__section">
                 <h3 className='address__section-title'>ip address</h3>
-                <p className="address__section-info">192.212.174.101</p>
+                <p className="address__section-info">{ipAddress}</p>
             </div>
             <div className="address__section">
-                <h3 className='address__section-title'>ip address</h3>
-                <p className="address__section-info">192.212.174.101</p>
+                <h3 className='address__section-title'>location</h3>
+                <p className="address__section-info">{location}</p>
             </div>
             <div className="address__section">
-                <h3 className='address__section-title'>ip address</h3>
-                <p className="address__section-info">192.212.174.101</p>
+                <h3 className='address__section-title'>timezone</h3>
+                <p className="address__section-info">{timezone}</p>
             </div>
             <div className="address__section">
-                <h3 className='address__section-title'>ip address</h3>
-                <p className="address__section-info">192.212.174.101</p>
+                <h3 className='address__section-title'>isp</h3>
+                <p className="address__section-info">{isp}</p>
             </div>
         </article>
     )
