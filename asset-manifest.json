@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FM-ip-adress-app/static/css/main.e1c37d2f.css",
+    "main.js": "/FM-ip-adress-app/static/js/main.ad9ab0cd.js",
+    "static/media/pattern-bg.png": "/FM-ip-adress-app/static/media/pattern-bg.a60a3c85aa8b88aac4b7.png",
+    "index.html": "/FM-ip-adress-app/index.html",
+    "static/media/icon-arrow.svg": "/FM-ip-adress-app/static/media/icon-arrow.2eaaa5ee3602d5aa14a2.svg",
+    "main.e1c37d2f.css.map": "/FM-ip-adress-app/static/css/main.e1c37d2f.css.map",
+    "main.ad9ab0cd.js.map": "/FM-ip-adress-app/static/js/main.ad9ab0cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1c37d2f.css",
+    "static/js/main.ad9ab0cd.js"
+  ]
+}
