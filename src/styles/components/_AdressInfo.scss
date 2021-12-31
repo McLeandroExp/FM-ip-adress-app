@@ -1,9 +1,9 @@
 .address {
   position: absolute;
-  bottom: -50%;
+  bottom: -55%;
   left: 10%;
   width: 80%;
-  height: 240px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +30,7 @@
   font-weight: 500;
 }
 @media screen and (min-width: 1024px) {
-  .address {
-      
+  .address {  
     flex-direction: row;
     align-items: stretch;
   }
