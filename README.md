@@ -16,15 +16,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Elmomero/FM-advice-generator](https://github.com/Elmomero/FM-advice-generator)
-- Live Site URL: [https://elmomero.github.io/FM-advice-generator/](https://elmomero.github.io/FM-advice-generator/)
+- Solution URL: [https://github.com/McLeandroExp/FM-ip-adress-app](https://github.com/McLeandroExp/FM-ip-adress-app)
+- Live Site URL: [https://mcleandroexp.github.io/FM-ip-adress-app/](https://mcleandroexp.github.io/FM-ip-adress-app/)
 
 ### How to use
 
 In order to get the public ip associated to your local network
 you have to click the page putton, or press enter, and the location of the map will
 change accordingly to the isp provider, also you can put a particular
-ip or email address also the map location and input related information
+ip or email address,and also the map location and entered related information
 will be displayed.
 
 ### Built with
