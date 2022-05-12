@@ -5,7 +5,6 @@
 - [How to use](#how-to-use)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
 
 ### The challenge
 
@@ -41,8 +40,3 @@ will be displayed.
 I learned how to display a map in react using a third party
 library (leaflet) and solve the problems related to its use,
 read the documentation and use it to display the map dinamically
-
-### Continued development
-
-I want to make bigger proyects using Css frameworks that makes
-faster to develop a proyect
