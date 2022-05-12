@@ -11,10 +11,14 @@
   border-color: white;
   outline-style: none;
 }
+.ipformdiv{
+  display: flex;
+  flex-direction: column; 
+}
 .ipform__input {
   display: block;
   width: 80%;
-  padding: 15px;
+  // padding: 15px;
   padding-left: 20px;
   border-radius: 15px 0 0 15px;
   border-color: white;

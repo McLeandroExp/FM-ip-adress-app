@@ -7,21 +7,24 @@ export const getLocationByIp = async (input = "") => {
         apiKey: process.env.REACT_APP_LOCALIZATION_KEY,
         ipAddress: input,
         domain: input,
-        email: input
+        email: input,
       },
     });
     const response = await instance.get();
+    if (response.statusText !== "OK") {
+      throw new Error(response.statusText);
+    }
     const data = response.data;
 
     return {
-      coors: [data.location.lat,data.location.lng],
+      coors: [data.location.lat, data.location.lng],
       ip: data.ip,
       location: `${data.location.region}, ${data.location.postalCode}`,
       timezone: data.location.timezone,
       isp: data.isp,
     };
   } catch (error) {
-    console.log(error);
+    console.error(error);
     return null;
   }
 };
